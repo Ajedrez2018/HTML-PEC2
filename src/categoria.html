@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categorías</title>
+  <link rel="icon" href="img/logosillaruedas.png" type="image/png"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" type="text/css" href="../node_modules/perfect-scrollbar/css/perfect-scrollbar.css">
+  
+  <script type="module" src="../node_modules/perfect-scrollbar/dist/perfect-scrollbar.js"></script>
+  <script type="module" src="./js/script.js"></script>
+
+</head>
+
+<body>
+
+<div class="container crucero">
+  <header>
+    <div class="logo-box">
+      <a href="./"><img src="img/logosillagrande.svg" alt=""></a>
+    </div>
+    
+    <div class="title">
+      <h1>Categorías</h1>
+    </div>
+  
+  </header>
+  
+  <section class="wrapper">
+    <article class="box">
+
+      <div class="box-buttons">
+        <div class="box-card">
+          <a href="playa.html">
+            <div class="category-text box-card-title">A la playa</div>
+            <img class="category-image" src="img/A4A-playas-accesibles-guia-espana-1.jpeg">
+          </a>
+        </div>
+        
+        
+        <div class="box-card">
+          <a href="crucero.html">
+            <div class="category-text box-card-title">En crucero</div>
+            <img class="category-image"  src="img/crucero.jpg">
+          </a>
+        </div>
+        
+        <div class="box-card">
+          <a href="globo.html">
+            <div class="category-text box-card-title">En globo</div>
+            <img class="category-image"  src="img/globo1.jpeg">
+          </a>
+        </div>
+        
+      </div>
+    </article>
+  </section>
+  
+  <footer>
+    <div class="footer-container">
+      <div class="logo-box">
+        <img id="logosub" src="img/logosillagrande.svg" alt="">
+      </div>
+      <nav class="navigation">
+        <label for="show-menu" class="show-menu"><img src="img/menu.png" alt=""></label>
+        <input type="checkbox" id="show-menu" role="button">
+        <ul id="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="presentacion.html">Presentación</a></li>
+          <li><a href="categoria.html">Categoria &uarr;</a>
+            <ul class="hidden">
+              <li><a href="playa.html">A la playa</a></li>
+              <li><a href="globo.html">En globo</a></li>
+              <li><a href="crucero.html">De crucero</a></li>
+            </ul>
+          </li>
+          <li><a href="enlaces.html">Enlaces</a></li>
+        </ul>
+      
+      </nav>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

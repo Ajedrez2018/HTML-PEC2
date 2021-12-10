@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /*overflow-x: hidden;*/
+}
+
+body{
+    overflow-x: hidden;
+}
+
+p{
+    box-sizing: border-box;
+}
+
+.container{
+    width:100vw;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+}
+
+/*HEADER*/
+
+header{
+    display: flex;
+    width: 100vw;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#logosub{
+    -webkit-animation: moveLogo 5s infinite;
+            animation: moveLogo 5s infinite;
+}
+
+.logo-box, img{
+    width:5vw;
+
+}
+
+.title{
+    text-align:center;
+    width:90vw;
+}
+
+.title{
+    color: #fff;
+}
+
+/*WRAPPER*/
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 100vh;
+}
+
+.box{
+    background: rgba(63, 191, 191, 0.3);
+    padding: 3rem;
+    width: 50vw;
+
+}
+
+.article-image{
+    padding: 1rem;
+    text-align: center;
+}
+
+.box img{
+    width: 80%;
+}
+
+.box p{
+    color: #fff;
+}
+
+.main-image{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.main-image img{
+    width: 50%;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.main-image img:hover{
+    transition: ease-in 3s;
+    transform: translate(10px, 50px);
+}
+
+.tag-list{
+    display: flex;
+    flex-flow: wrap;
+}
+
+.tag{
+    padding: .7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 15px;
+    background: #ffffff;
+    color: #565656;
+    border-radius: 50px;
+}
+
+.tag:hover{
+    background: #3FBFBF;
+    color:#fff;
+    transition: ease-in 200ms;
+}
+
+.data-list{
+    display: grid;
+    margin-top: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 5px;
+}
+
+.data-list > li{
+    margin: 10px 0;
+    padding: 10px 5px;
+    color:#fff!important;
+    font-weight: bold;
+}
+
+.box-buttons{
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+
+}
+
+.box-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    flex-flow: wrap;
+    padding: 1rem;
+    margin: 1rem;
+    width: 25%;
+}
+
+.box-card:hover{
+    background: rgba(255,255,255,0.2);
+    transform: scale(1.1, 1.1);
+    transition: ease-out 1s;
+    border: 2px solid #3FBFBF;
+}
+
+.box-card .box-card-title{
+    font-size: 150%;
+    font-weight: bolder;
+    color: #212121;
+    text-align: center;
+    margin: 1rem;
+    padding: .5rem;
+}
+
+.box-card img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.category-text{
+    font-size: 120%;
+    color:#fff;
+}
+
+.category-image{
+    width: 70%;
+}
+
+/*FOOTER*/
+
+footer{
+    /*display: flex;*/
+}
+
+.footer-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom:0px;
+}
+
+.logo-box img{
+    min-width: 45px;
+    width: 45px;
+    margin-left: 10px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: flex-end;
+    width: 90vw;
+}
+
+.bottom-bar{
+    background: #3FBFBF ;
+    margin-top: 1rem;
+    padding: 1rem;
+    color: #fff;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    width: 100vw;
+}
+
+/*BACKGROUNDS*/
+
+.inicio {
+    background-image: url("522716_114562378732281_1055335040_n.caa5b493.jpeg");
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+.presentacion {
+    background-image: url("AJBARNA-cadires-bany-assistit_2018_710x379_1.6588fecc.jpeg");
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+.globos {
+    background-image: url("globo1.84357b5f.jpeg");
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+.playas {
+    background-image: url("A4A-playas-accesibles-guia-espana-1.183e8b6c.jpeg");
+    background-repeat: round;
+    background-size: cover;
+}
+
+.crucero {
+    background-image: url("crucero.e5f1a6ed.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.enlaces {
+    background-image: url("egipto1.cbea5cbb.jpg");
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+/*MENU*/
+
+ul {
+    margin:0;
+    padding:0;
+    position: fixed;
+    bottom: 0;
+}
+
+li {
+    display:inline-block;
+    float: left;
+    margin-right: 1px;
+    border-right: 1px solid #ccc;
+}
+
+li a {
+    display:block;
+    min-width:140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    color: #fff;
+    text-decoration: none;
+}
+
+li:hover a {
+    background: #3FBFBF;
+    color: #fff;
+}
+
+li:hover ul a {
+    background: #f3f3f3;
+    color: #2f3036;
+    height: 40px;
+    position: relative;
+    bottom:50px;
+    line-height: 40px;
+}
+
+li:hover ul a:hover {
+    background: #3FBFBF;
+    color: #fff;
+}
+
+li ul {
+    display: none;
+    position:relative;
+    bottom:30px;
+}
+
+li ul li {
+    display: block;
+    float: none;
+}
+
+li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+
+.hidden{
+    position: absolute;
+    bottom: 10px;
+    box-sizing: initial;
+}
+
+ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+}
+
+.show-menu {
+    text-align: center;
+    padding: 10px;
+    display: none;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+/*seleccion delementos hermanos (ampliado)*/
+
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+.credits-bar{
+    color: #fff;
+    font-size: 80%;
+    position: fixed;
+    bottom:60px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width : 760px){
+
+    .container{
+        width:100vw;
+        height: 100vh;
+    }
+
+    .box-card{
+        display: block;
+        background: rgba(255,255,255,0.2);
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 1rem;
+        width: 90%;
+        margin: auto;
+    }
+
+    .box-card .box-card-title{
+        font-size: 150%;
+        font-weight: bolder;
+        color: #212121;
+        text-align: center;
+        margin: 1rem;
+        padding: .5rem;
+    }
+
+    .box-card img{
+        border-radius: 10px;
+        width: 100%;
+    }
+
+
+
+
+
+
+    ul {
+        position: static;
+        display: none;
+    }
+
+    li {
+        margin-bottom: 1px;
+    }
+
+    ul li, li a {
+        width: 100%;
+    }
+
+    .show-menu {
+        display:block;
+        position: absolute;
+        bottom: 20px;
+
+    }
+}
+
+@-webkit-keyframes main-image-index {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(50px);
+    }
+}
+
+@keyframes main-image-index {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(50px);
+    }
+}
+
+@-webkit-keyframes moveLogo {
+   from{
+      transform: rotate(0deg);
+      transition: ease-in 2s;
+       -webkit-clip-path: circle(50%);
+               clip-path: circle(50%);
+   }
+   to{
+       transform: rotate(360deg);
+       transition: ease-in 2s;
+       -webkit-clip-path: circle(50%);
+               clip-path: circle(50%);
+   }
+}
+
+@keyframes moveLogo {
+   from{
+      transform: rotate(0deg);
+      transition: ease-in 2s;
+       -webkit-clip-path: circle(50%);
+               clip-path: circle(50%);
+   }
+   to{
+       transform: rotate(360deg);
+       transition: ease-in 2s;
+       -webkit-clip-path: circle(50%);
+               clip-path: circle(50%);
+   }
+}
+
+
+/*# sourceMappingURL=index.212ab60f.css.map */
